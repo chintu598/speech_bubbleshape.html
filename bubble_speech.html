@@ -1,0 +1,39 @@
+<!DOCTYPE html>                                 <!--This is html5 document declaratiob-->
+<html lang="en">  
+<head>  
+   <meta charset=utf-8>                         <!--Character encoding-->
+   <title>Speech bubble shape with CSS3</title> <!--Title of webpage-->
+   <style type="text/css">                      /* Internal styling in head section */
+   h3{
+   margin-left: 15px;
+   color: gray; 
+   }
+
+  #speech-bubble {                              /* Styling the content with specific unique id */
+   width: 120px;   
+   height: 80px;   
+   background: #5ac4ed;  
+   position: absolute;  
+   left:100px;  
+   -moz-border-radius: 10px;   
+   -webkit-border-radius: 10px;   
+   border-radius: 10px;
+   }
+ 
+  #speech-bubble:before {  
+   content:"";  
+   position: absolute;  
+   width: 0;  
+   height: 0;  
+   border-top: 13px solid transparent;  
+   border-right: 26px solid #5ac4ed;  
+   border-bottom: 13px solid transparent;  
+   margin: 13px 0 0 -25px;
+   }
+  </style>                                      <!-- Closing of Internal styling-->
+</head>  
+<body>                                          <!-- Boody content of webpage-->
+   <h3> This is a speech bubble shape using CSS3 styling </h3>
+   <div id="speech-bubble"></div>               <!--opening a div with div tag-->
+</body>  
+</html>                                         <!--Declaration of closing  html-->
